@@ -7,17 +7,18 @@ Provides integration with Firebase Cloud Messaging API in Symfony applications.
 
 Supported client platforms:
 
-* Android
-* iOS
-* Web browser
+* [x] Android
+* [x] iOS
+* [x] Web browser
 
 # Installation
+Pour installer le bundle, excecuter la command suivant :
 `composer require MahefaAbel/firebase-cloud-messaging-bundle`
 
 # Configuration
 Les configuration suivant est à mettre dans `config.yml`
 
-    fresh_firebase_cloud_messaging:
+    mahefa_firebase_cloud_messaging:
 	    sender_id : test
 	    server_key : AIzaSyZ-1u...0GBYzPu7Udno5aA
 	    endpoint : https://fcm.googleapis.com/fcm/send
