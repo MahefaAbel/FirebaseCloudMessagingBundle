@@ -1,0 +1,53 @@
+{
+    "name": "mahefaabel/firebase-cloud-messaging-bundle",
+    "description": "Provides integration with Firebase Cloud Messaging API.",
+    "keywords": ["symfony", "bundle", "fcm", "firebase", "cloud", "messaging", "api client", "firebase cloud messaging", "notification", "push", "push-notification", "web-push", "web-push-notification", "android", "ios"],
+    "homepage": "https://firebase.google.com/docs/cloud-messaging/",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Henvald",
+            "email": "genvaldartem@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "email": "genvaldartem@gmail.com",
+        "issues": "https://github.com/fre5h/FirebaseCloudMessagingBundle/issues"
+    },
+    "require": {
+        "php": ">=7.1.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/config": "^3.4 || ^4.0",
+        "symfony/event-dispatcher": "^3.4 || ^4.0",
+        "symfony/framework-bundle": "^3.4 || ^4.0",
+        "symfony/http-foundation": "^3.4 || ^4.0",
+        "symfony/validator": "^3.4 || ^4.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.9",
+        "phpunit/phpunit": "^7.1",
+        "escapestudios/symfony2-coding-standard": "^3.4",
+        "squizlabs/php_codesniffer": "^3.2",
+        "matthiasnoback/symfony-config-test": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fresh\\FirebaseCloudMessagingBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fresh\\FirebaseCloudMessagingBundle\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4-dev"
+        }
+    }
+}

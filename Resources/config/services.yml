@@ -1,0 +1,22 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+#            $senderId: '%firebase_cloud_messaging.sender_id%'
+            $serverKey: '%firebase_cloud_messaging.server_key%'
+            $endpoint: '%firebase_cloud_messaging.endpoint%'
+            $guzzleTimeOut: '%firebase_cloud_messaging.guzzle_timeout%'
+
+    Fresh\FirebaseCloudMessagingBundle\Client\:
+        resource: '../../Client/'
+
+    Fresh\FirebaseCloudMessagingBundle\Command\:
+        resource: '../../Command/'
+
+    Fresh\FirebaseCloudMessagingBundle\Response\ResponseProcessor:
+        class: Fresh\FirebaseCloudMessagingBundle\Response\ResponseProcessor
+
+    Fresh\FirebaseCloudMessagingBundle\Message\Builder\MessageBuilder:
+        class: Fresh\FirebaseCloudMessagingBundle\Message\Builder\MessageBuilder
