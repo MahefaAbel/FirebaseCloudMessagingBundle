@@ -28,7 +28,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('fresh_firebase_cloud_messaging');
+        $rootNode = $treeBuilder->root('mahefa_firebase_cloud_messaging');
 
         $rootNode
             ->children()
