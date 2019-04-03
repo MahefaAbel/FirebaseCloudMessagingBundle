@@ -5,11 +5,12 @@ Ceci est une version ameliorer du [https://github.com/fre5h/FirebaseCloudMessagi
 
 Provides integration with Firebase Cloud Messaging API in Symfony applications.
 
-Supported client platforms:
+Supported client platforms :
+- Android
+- iOS
+- Web browser
 
-* [x] Android
-* [x] iOS
-* [x] Web browser
+Dernier mise à jours : 3 avril 2019
 
 # Installation
 Pour installer le bundle, excecuter la command suivant :
